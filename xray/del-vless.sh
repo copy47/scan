@@ -4,9 +4,6 @@
 red='\e[1;31m'
 green='\e[0;32m'
 NC='\e[0m'
-green() { echo -e "\\033[32;1m${*}\\033[0m"; }
-red() { echo -e "\\033[31;1m${*}\\033[0m"; }
-
 clear
 
 NUMBER_OF_CLIENTS=$(grep -c -E "^#& " "/etc/xray/config.json")
@@ -19,7 +16,7 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#& " "/etc/xray/config.json")
 		echo ""
 		echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 		read -n 1 -s -r -p "Press any key to back on menu"
-        menu
+        
 	fi
 
 	clear
@@ -49,5 +46,5 @@ NUMBER_OF_CLIENTS=$(grep -c -E "^#& " "/etc/xray/config.json")
     echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
     echo ""
     read -n 1 -s -r -p "Press any key to back on menu"
-    menu
+    
     fi
