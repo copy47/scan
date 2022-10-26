@@ -41,7 +41,7 @@ echo -e "
 03. Extending Trojan GO & GRCP Account Active Life
 04. Check User Login Trojan GO & GRCP
 
-\033[35m[00] • Back to Main Menu \033[1;32m<\033[1;33m<\033[1;31m<\033[1;31m"
+\033[35m[00] • Back to Main Menu "
 echo ""
 echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo ""
