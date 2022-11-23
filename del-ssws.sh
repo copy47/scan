@@ -1,7 +1,6 @@
 #!/bin/bash
 #NUMBER_OF_CLIENTS=$(grep -c -E "^### " "/etc/xray/config.json")
-	#if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
-		echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
+#if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; thenecho -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
         echo -e "\\E[0;36m       Delete Sodosok Account      \E[0m"
         echo -e "\033[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 		echo ""
