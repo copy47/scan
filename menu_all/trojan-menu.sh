@@ -31,7 +31,7 @@ clear
 echo -n > /tmp/other.txt
 data=( `cat /etc/xray/config.json | grep '^#!' | cut -d ' ' -f 2 | sort | uniq`);
 echo -e "${CYAN}┌─────────────────────────────────────────────────┐${NC}"
-echo -e "${CYAN}│${NC}             • TROJAN ONLINE NOW •              ${NC}         $NC"
+echo -e "${CYAN}│${NC}             • TROJAN ONLINE NOW •              ${NC} $NC"
 echo -e "${CYAN}└─────────────────────────────────────────────────┘${NC}"
 echo -e "${CYAN}┌─────────────────────────────────────────────────┐${NC}"
 
@@ -70,7 +70,7 @@ done
 rm -rf /tmp/other.txt
 echo -e "${CYAN}└─────────────────────────────────────────────────┘${NC}" 
 echo -e "${CYAN}┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "${CYAN}│${NC}                • Arya Blitar •                 $COL         │$NC"
+echo -e "${CYAN}│${NC}                • Arya Blitar •                 $COLOR1         $NC"
 echo -e "${CYAN}└─────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -89,7 +89,7 @@ echo -e "${CYAN}┌────────────────────�
 echo -e "${CYAN}│${NC}  • You Dont have any existing clients!"
 echo -e "${CYAN}└─────────────────────────────────────────────────┘${NC}" 
 echo -e "${CYAN}┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "${CYAN}│${NC}                • Arya Blitar •                       $COLOR1│$NC"
+echo -e "${CYAN}│${NC}                • Arya Blitar •                       $COLOR $NC"
 echo -e "${CYAN}└─────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -97,7 +97,7 @@ menu-trojan
 fi
 clear
 echo -e "${CYAN}┌─────────────────────────────────────────────────┐${NC}"
-echo -e "${CYAN}│${NC}           • DELETE TROJAN USER •               ${NC} $COLOR1│$NC"
+echo -e "${CYAN}│${NC}           • DELETE TROJAN USER •               ${NC} $COLOR1 $NC"
 echo -e "${CYAN}└─────────────────────────────────────────────────┘${NC}"
 echo -e "${CYAN}┌─────────────────────────────────────────────────┐${NC}"
 grep -E "^#! " "/etc/xray/config.json" | cut -d ' ' -f 2-3 | column -t | sort | uniq | nl
@@ -114,7 +114,7 @@ sed -i "/^#! $user $exp/,/^},{/d" /etc/xray/config.json
 systemctl restart xray > /dev/null 2>&1
 clear
 echo -e "${CYAN}┌─────────────────────────────────────────────────┐${NC}"
-echo -e "${CYAN}│${NC}           • DELETE TROJAN USER •               ${NC} $COLOR1│$NC"
+echo -e "${CYAN}│${NC}           • DELETE TROJAN USER •               ${NC} $COLOR1 $NC"
 echo -e "${CYAN}└─────────────────────────────────────────────────┘${NC}"
 echo -e "${CYAN}┌─────────────────────────────────────────────────┐${NC}"
 echo -e "${CYAN}│${NC}   • Accound Delete Successfully"
@@ -123,7 +123,7 @@ echo -e "${CYAN}│${NC}   • Client Name : $user"
 echo -e "${CYAN}│${NC}   • Expired On  : $exp"
 echo -e "${CYAN}└─────────────────────────────────────────────────┘${NC}" 
 echo -e "${CYAN}┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "${CYAN}│${NC}                • Arya Blitar •                       $COLOR1│$NC"
+echo -e "${CYAN}│${NC}                • Arya Blitar •                       $COLOR1 $NC"
 echo -e "${CYAN}└─────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -134,7 +134,7 @@ fi
 function renewtrojan(){
 clear
 echo -e "${CYAN}┌─────────────────────────────────────────────────┐${NC}"
-echo -e "${CYAN}│${NC}            • RENEW TROJAN USER •               ${NC} $COLOR1│$NC"
+echo -e "${CYAN}│${NC}            • RENEW TROJAN USER •               ${NC} $COLOR1 $NC"
 echo -e "${CYAN}└─────────────────────────────────────────────────┘${NC}"
 echo -e "${CYAN}┌─────────────────────────────────────────────────┐${NC}"
 NUMBER_OF_CLIENTS=$(grep -c -E "^#! " "/etc/xray/config.json")
@@ -142,7 +142,7 @@ if [[ ${NUMBER_OF_CLIENTS} == '0' ]]; then
 echo -e "${CYAN}│${NC}  • You have no existing clients!"
 echo -e "${CYAN}└─────────────────────────────────────────────────┘${NC}" 
 echo -e "${CYAN}┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "${CYAN}│${NC}                • Arya Blitar •                       $COLOR1│$NC"
+echo -e "${CYAN}│${NC}                • Arya Blitar •                       $COLOR1 $NC"
 echo -e "${CYAN}└─────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -150,7 +150,7 @@ menu-trojan
 fi
 clear
 echo -e "${CYAN}┌─────────────────────────────────────────────────┐${NC}"
-echo -e "${CYAN}│${NC}            • RENEW TROJAN USER •                            │$NC"
+echo -e "${CYAN}│${NC}            • RENEW TROJAN USER •                             $NC"
 echo -e "${CYAN}└─────────────────────────────────────────────────┘${NC}"
 echo -e "${CYAN}┌─────────────────────────────────────────────────┐${NC}"
 grep -E "^#! " "/etc/xray/config.json" | cut -d ' ' -f 2-3 | column -t | sort | uniq | nl
@@ -158,7 +158,7 @@ echo -e "${CYAN}│${NC}"
 echo -e "${CYAN}│${NC}  • [NOTE] Press any key to back on menu"
 echo -e "${CYAN}└─────────────────────────────────────────────────┘${NC}" 
 echo -e "${CYAN}┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "${CYAN}│${NC}                • Arya Blitar •                              │$NC"
+echo -e "${CYAN}│${NC}                • Arya Blitar •                     $NC"
 echo -e "${CYAN}└─────────────────────────────────────────────────┘${NC}"
 echo -e "${CYAN}───────────────────────────────────────────────────${NC}"
 read -rp "   Input Username : " user
@@ -180,7 +180,7 @@ sed -i "/#! $user/c\#! $user $exp4" /etc/xray/config.json
 systemctl restart xray > /dev/null 2>&1
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}             • RENEW TROJAN USER •              ${NC} $COLOR1│$NC"
+echo -e "$COLOR1│${NC}             • RENEW TROJAN USER •              ${NC} $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC}   [INFO]  $user Account Renewed Successfully"
@@ -190,7 +190,7 @@ echo -e "$COLOR1│${NC}   Days Added  : $masaaktif Days"
 echo -e "$COLOR1│${NC}   Expired On  : $exp4"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                • Arya Blitar •                       $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                • Arya Blitar •                       $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -202,7 +202,7 @@ function addtrojan(){
 source /var/lib/squidvpn-pro/ipvps.conf
 domain=$(cat /etc/xray/domain)
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}            • CREATE TROJAN USER •              ${NC} $COLOR1│$NC"
+echo -e "$COLOR1│${NC}            • CREATE TROJAN USER •              ${NC} $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 tr="$(cat ~/log-install.txt | grep -w "Trojan WS " | cut -d: -f2|sed 's/ //g')"
@@ -212,7 +212,7 @@ if [ -z $user ]; then
 echo -e "$COLOR1│${NC}   [Error] Username cannot be empty "
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                • Arya Blitar •                       $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                • Arya Blitar •                       $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo ""
 read -n 1 -s -r -p "   Press any key to back on menu"
@@ -222,13 +222,13 @@ user_EXISTS=$(grep -w $user /etc/xray/config.json | wc -l)
 if [[ ${user_EXISTS} == '1' ]]; then
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}            • CREATE TROJAN USER •              ${NC} $COLOR1│$NC"
+echo -e "$COLOR1│${NC}            • CREATE TROJAN USER •              ${NC} $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC}  Please choose another name."
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                • Arya Blitar •                       $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                • Arya Blitar •                       $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 read -n 1 -s -r -p "   Press any key to back on menu"
 trojan-menu
@@ -246,7 +246,7 @@ trojanlink1="trojan://${uuid}@${domain}:${tr}?mode=gun&security=tls&type=grpc&se
 trojanlink="trojan://${uuid}@${domain}:${tr}?path=%2Ftrojan-ws&security=tls&host=bug.com&type=ws&sni=bug.com#${user}"
 clear
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}            • CREATE TROJAN USER •              ${NC} $COLOR1│$NC"
+echo -e "$COLOR1│${NC}            • CREATE TROJAN USER •              ${NC} $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│${NC} Remarks     : ${user}" 
@@ -266,7 +266,7 @@ echo -e "$COLOR1│${NC} Link GRPC : "
 echo -e "$COLOR1│${NC} ${trojanlink1}"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}" 
 echo -e "$COLOR1┌────────────────────── BY ───────────────────────┐${NC}"
-echo -e "$COLOR1│${NC}                • Arya Blitar •                       $COLOR1│$NC"
+echo -e "$COLOR1│${NC}                • Arya Blitar •                       $COLOR1 $NC"
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo "" 
 read -n 1 -s -r -p "   Press any key to back on menu"
