@@ -2,8 +2,7 @@
 <img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&center=true&vCenter=true&lines=S+C+R+I+P+T++A+R+Y+A++B+L+I+T+A+R" />
 </p>
 
-
- OpenSSH                 : 22
+   - OpenSSH                 : 22
    - SSH Websocket           : 80
    - SSH SSL Websocket       : 443
    - Stunnel4                : 447, 777
